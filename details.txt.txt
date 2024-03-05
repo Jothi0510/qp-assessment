@@ -1,0 +1,11 @@
+1.Admin Responsibilities:
+   - Add new grocery items to the system => POST http://localhost:8080/groceries
+   - View existing grocery items => GET http://localhost:8080/groceries
+   - Remove grocery items from the system => DELETE  http://localhost:8080/remove/pepper
+   - Update details (e.g., name, price) of existing grocery items => UPDATE http://localhost:8080/update/7 
+   - Manage inventory levels of grocery items =>  Whenever a user places an order the quantity will be reduced based on the quantity being placed.
+
+2.User Responsibilities:
+   - View the list of available grocery items => GET http://localhost:8080/grocerylist (Only availble quantity will be shown to the user)
+   - Ability to book multiple grocery items in a single order => POST http://localhost:8080/order
+
